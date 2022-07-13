@@ -1,5 +1,11 @@
 <h1>Hola Anolito</h1>
 <p>Proyecto : {{title}}</p>
-<button (click)=" contador = contador + 1">+1</button>
+<button (click)=" operation(1)">+1</button>
 <span> {{contador}} </span>
-<button (click)="contador  = contador -1">-1</button>
+<button (click)="operation(2)">-1</button>
+<p></p>
+<br>
+
+<button (click)=" acumulador(1)">+{{base}}</button>
+<span>La Base es : {{ contador}}</span>
+<button (click)=" acumulador(2)">-{{base}}</button>
